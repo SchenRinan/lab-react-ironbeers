@@ -7,7 +7,7 @@ const Beer = () => {
     const [loading, setLoading] = useState(false);
     const {_id} = useParams();
     useEffect(()=>{
-        axios.get(`https://ih-beers-api2.herokuapp.com/beers/${_id}`)
+        axios.get(`https://ih-beers-api2.herokuapp.com/beers/${_id || 'random'}`)
             .then(data =>{
                 setLoading(true)
                 setBeer(data);
@@ -19,7 +19,7 @@ const Beer = () => {
     return (
         <div className="Beer">
             {loading ? 
-            <div>{beer.data.name}</div>
+            <div>{beer.data.name}</div> 
             : 'Still Loading...'}
         </div>
     );
