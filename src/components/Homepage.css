@@ -1,0 +1,19 @@
+.Homepage h2, p{
+    margin: 0;
+    max-width: 100%;
+    padding: 0 30px;
+}
+
+.Homepage h2{
+    font-size: 30px;
+    color: black;
+}
+
+.Homepage p{
+    padding-bottom: 20px;
+    color: gray;
+}
+
+.Homepage img{
+    width: 100%;
+}

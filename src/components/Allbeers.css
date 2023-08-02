@@ -1,0 +1,39 @@
+.Allbeers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Allbeers .container{
+    height: 100px;
+    display: flex;
+    padding-top: 30px;
+    width: 500px;
+}
+
+.Allbeers .container img{
+    height: 90px;
+}
+
+.Allbeers .text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.Allbeers p{
+    margin: 0;
+    padding: 0;
+}
+
+.Allbeers h1{
+    margin: 0;
+    font-size: 18px;
+}
+
+.Allbeers .img{
+    min-width: 60px;
+}
+
+.Allbeers a{
+    color: black;
+}
