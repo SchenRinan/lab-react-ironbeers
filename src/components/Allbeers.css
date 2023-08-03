@@ -4,14 +4,14 @@
 }
 
 .Allbeers .container{
-    height: 100px;
+    height: 200px;
     display: flex;
-    padding-top: 30px;
-    width: 500px;
+    padding-top: 50px;
+    min-width: 350px;
 }
 
 .Allbeers .container img{
-    height: 90px;
+    height: 200px;
 }
 
 .Allbeers .text{
@@ -31,9 +31,17 @@
 }
 
 .Allbeers .img{
-    min-width: 60px;
+    min-width: 150px;
 }
 
 .Allbeers a{
     color: black;
+}
+
+#beers-search{
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    width: 80vw;
 }

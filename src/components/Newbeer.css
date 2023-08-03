@@ -1,0 +1,53 @@
+.Newbeer #name-line{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+#name-line input{
+    width: 40vw;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#name-line div{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#des {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#des textarea{
+    width: 80vw;
+    height: 100px;
+    border-radius: 20px;
+    text-align: start;
+    padding: 10px;
+}
+
+#by input{
+    width: 85vw;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#by{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn-new{
+    border-radius: 20px;
+    height: 30px;
+    width: 87vw;
+    margin: 20px;
+    background-color: skyblue;
+    color: white;
+    font-weight: bolder;
+}

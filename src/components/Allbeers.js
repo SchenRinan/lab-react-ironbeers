@@ -6,11 +6,18 @@ import { Link } from "react-router-dom/dist";
 const Allbeers = () => {
     const [beers, setBeers] = useState([]);
     const [loading, setLoading] = useState(false);
+    const [searchBeer, setSearch] = useState(beers);
+    
+    const findBeer = item =>{
+        setBeers(searchBeer.filter(filtrate => filtrate.name.toLowerCase().includes(item.target.value.toLowerCase())));
+    }
+
     useEffect(()=>{
         axios.get('https://ih-beers-api2.herokuapp.com/beers')
         .then(data =>{
             setLoading(true)
-            setBeers(data);
+            setBeers(data.data);
+            setSearch(data.data);
         })
         .catch((err) => {
             console.log(err.message);
@@ -19,9 +26,10 @@ const Allbeers = () => {
 
     return (
         <>
+            <input type="search" onChange={e=>findBeer(e)} id="beers-search"/>
             {loading ? 
             <div className="Allbeers">
-                {beers.data.map(item =>{
+                {beers.map(item =>{
                     return (
                         <Link to={item._id} key={item._id}>
                             <div className="container" >
@@ -37,7 +45,7 @@ const Allbeers = () => {
                         </Link>
                 )})}
             </div>
-            : 'Still Loading...'}
+            : <div>Still Loading...</div>}
         </>
     );
 }

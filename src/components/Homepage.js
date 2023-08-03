@@ -22,11 +22,13 @@ const Homepage = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel turpis in dui ultrices pharetra a sit amet est.</p>
                 </div>
             </Link>
-            <div id="new-beer">
-                <img src={newbeerimage} alt="" />
-                <h2>New Beer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel turpis in dui ultrices pharetra a sit amet est.</p>
-            </div>
+            <Link to='/new-beer'>
+                <div id="new-beer">
+                    <img src={newbeerimage} alt="" />
+                    <h2>New Beer</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel turpis in dui ultrices pharetra a sit amet est.</p>
+                </div>
+            </Link>
         </main>
     );
 }

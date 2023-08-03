@@ -1,0 +1,21 @@
+.Beer{
+    padding: 20px 10px;
+}
+
+.Beer img{
+    height: 200px;
+}
+
+.Beer p{
+    text-align: left;
+    padding: 0;
+}
+
+.Beer h1, h4{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Beer .gray{
+    color: gray;
+}
